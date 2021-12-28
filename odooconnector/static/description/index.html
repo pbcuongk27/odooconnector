@@ -1,7 +1,18 @@
+<script type="text/javascript" language="javascript"></script>
+
+function sendRequest()
+{
+    document.getElementById("demo").innerHTML = "Hello Odoo";
+}
+
+</script>
+
 <section class="oe_container">
     <div class="oe_row oe_spaced">
         <h2 class="oe_slogan" style="color:#00a09d">Welcome to the Odyssee connector addon</h2>
         <h5 class="oe_slogan">With this addon, you can establish the link between your Odoo and the Odyssee system.</h5>        
     </div>
-    
+
+    <button type="submit" onclick="javascript:sendRequest()">Open configuration screen</button>
+    <p id="demo"></p>
 </section>
