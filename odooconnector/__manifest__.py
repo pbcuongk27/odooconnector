@@ -5,5 +5,5 @@
     'author':'Odyssee Mobile',
     'website':'https://odysseemobile.com/',
     'license':'LGPL-3',
-    'images':['static/description/icon.png','static/description/images/main_screentshot','images/odoo_introduce_screentshot','images/odoo_auth_screenshot','images/odoo_settings_screenshot','images/odoo_categories_screenshot']
+    'images':['static/description/icon.png','images/main_screentshot.png']
 }
