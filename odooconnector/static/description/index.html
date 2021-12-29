@@ -2,12 +2,81 @@
 
 <section class="container">
     <h2 class="text-muted">Welcome to the Odyssee connector addon</h2>
-    <hr>
     <p class="lead">With this addon, you can establish the link between your Odoo and the Odyssee system.</p> 
     <hr>
-
+    <h2 class="text-muted">Introduction</h2>
+    <p class="lead">Introduction and frequently asked questions</p>
     <div class="row">
         <img src="odoo_introduce_screentshot.png" class="img-fluid d-block mx-auto"/>
     </div>
-    
+    <hr>
+    <h2 class="text-muted">Credentials</h2>
+    <p class="lead">Configure your connector credentials</p>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="odoo_auth_screenshot.png" class="img-fluid d-block mx-auto"/>
+        </div>
+        <div class="col-lg-8">
+            <ul>
+                <li>Odoo API URL: Be sure this url is reachable from outside your intranet. On the majority of the case, it looks likes https://YourOdooServer.odoo.com/</li>
+                <li>Company DB: this is the dbname you see when login on Odoo. After sign in Odoo and clicking on the menu “My Databases“, you can find database that you want to connect on the screen “Your Databases” </li>
+                <li>Username: the username of a valid-user</li>
+                <li>Password: the password of a valid-user</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2 class="text-muted">Connector Settings</h2>
+    <p class="lead">Configure your connector settings</p>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="odoo_settings_screenshot.png" class="img-fluid d-block mx-auto"/>
+        </div>
+        <div class="col-lg-8">
+            <ul>
+                <li>Export Partners type Company: Synchronize Odoo Partner to Odyssee company
+                    <ul>
+                        <li>Automatically create work order location for each customer</li>
+                        <li>Create location based on address (Invoice, delivery, private, and other address)</li>
+                    </ul>
+                </li>
+                </li>
+                <li>Export Partners.Contact: Synchronize Odoo Contact of Partner to Odyssee contact
+                    <ul>
+                        <li>Enable Service Desk Access: if enable, contacts will be granted to service desk and the Odoo.Contact.Email will be used for service desk login</li>
+                    </ul>
+                </li>
+                <li>Export products: synchronize Odoo product to Odyssee article, and product.category to Odyssee Article Category. 
+                    <ul>
+                        <li>Filter by Product category: When it is checked, step 4 “Select article categories to export“ will be displayed, then the user can select the category that they want to import from Odoo to ODS</li>
+                        <li>Export Product Prices
+                            <ul>
+                                <li>None: No Odoo products prices will be sent to Odyssee</li>
+                                <li>Default price: The Odoo product price lists will be sent to Odyssee. Please make sure that each price list contains a price for each product!</li>
+                                <li>Pricelist: Based on Odoo rule, calculate the prices list of Odoo products on Odyssee</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Export Work Order: Send completed work orders to Odoo
+                    <ul>
+                        <li>Export Invoice As
+                            <ul>
+                                <li>Sales Invoice: Send completed work orders to Odoo Sales Invoice</li>
+                                <li>Sales Orders: Send completed work orders to Odoo Sales Orders</li>
+                                <li>Use product price from Odoo: When sending an invoice from Odyssee to Odoo, we can let Odoo compute the price on the fly (and all the rules of Odoo will be applied) or we can use the price that has been computed in Odyssee</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Sync Enable: Background sync will be enabled for this plugin</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <h2 class="text-muted">Select product categories to export</h2>
+    <p class="lead">The user can select product categories that they want to export to Odyssee. It means when a product category is checked, it and its products will be synced to Odyssee</p>
+    <div class="row">
+        <img src="odoo_categories_screenshot.png" class="img-fluid d-block mx-auto"/>
+    </div>    
 </section>
