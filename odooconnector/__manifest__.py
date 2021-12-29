@@ -6,6 +6,7 @@
     'author':'Odyssee Mobile',
     'website':'https://odysseemobile.com/',
     'license':'LGPL-3',
+    'installable':'False',
     'images':['static/description/ods_description.png'],
     'live_test_url': 'https://portal.odysseemobile.com/marketplace?connect=odoo',
 }
